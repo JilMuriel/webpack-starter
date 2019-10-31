@@ -1,0 +1,101 @@
+$navy-blue: #0a4259;
+
+.btn {
+    padding: 3px 13px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    width: auto;
+    text-decoration: none;
+}
+
+.btn-border {
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    -webkit-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+
+    &:hover {
+        background: #fff;
+        color: $navy-blue;
+    }
+}
+
+.login-link {
+    -webkit-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 550;
+
+    &:hover {
+        color: #cbd3da !important;
+        text-decoration: underline;
+    }
+}
+
+.btn-contact {
+    background: #0a4259;
+    border-radius: 5px;
+    border: solid 1.5px transparent;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 550;
+
+    -webkit-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+
+
+    &:hover {
+        border: 1.5px solid $navy-blue;
+        background: transparent;
+        color: $navy-blue;
+    }
+
+    @include for-size(phone-only) {
+        height: 27px;
+        margin: auto;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        padding: 2px 7px 0px;
+        font-size: 11px;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        height: 27px;
+        margin: auto;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        padding: 2px 9px 0px;
+    }
+
+    @include for-size(laptop-up) {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding: 2px 15px 2px;
+    }
+}
+
+.btn-wrapper {
+    margin-left: auto;
+    display: block;
+
+    @include for-size(tablet-portrait-up) {
+        display: flex;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        display: flex;
+    }
+
+    @include for-size(laptop-up) {
+        display: flex;
+    }
+
+    @include for-size(desktop-up) {
+        display: flex;
+    }
+}

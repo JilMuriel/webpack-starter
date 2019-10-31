@@ -1,0 +1,51 @@
+@mixin for-size($range) {
+    $phone-upper-boundary: 600px;
+    $tablet-upper-boundary: 768px;
+    $tablet-portrait-upper-boundary: 900px;
+    $tablet-standard-boundary: 900px;
+    $tablet-landscape-upper-boundary: 1200px;
+    $laptop-boundary: 1024px;
+    $desktop-upper-boundary: 1300px;
+
+    @if $range==phone-only {
+        @media (max-width: #{$phone-upper-boundary - 1}) {
+            @content;
+        }
+    }
+
+    @else if $range==tablet-portrait-up {
+        @media (min-width: $phone-upper-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==tablet-standard {
+        @media (max-width: $tablet-standard-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==tablet-landscape-up {
+        @media (max-width: $tablet-portrait-upper-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==laptop-up {
+        @media (min-width: $laptop-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==desktop-up {
+        @media (min-width: $tablet-landscape-upper-boundary) {
+            @content;
+        }
+    }
+
+    @else if $range==big-desktop-up {
+        @media (max-width: $desktop-upper-boundary) {
+            @content;
+        }
+    }
+}

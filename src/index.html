@@ -1,12 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+  <nav id="nav">
+    <!-- top nav -->
+    <div class="top-nav">
+      <!-- nav margin and spacing -->
+      <div class="nav-margin">
+        <ul class="top-nav__wrapper">
+          <li class="country">
+            <a href="#">
+              <img src="src/images/globe-icon.svg" alt="goFluent country"
+                style="height: 14px!important;width: auto!important;margin-top:8px;"></a>
+                <div class="country-dropdown">
+                  <div class="dropdown-card" >
+                                    <ul>
+                                      <li><a href="#">Brazil (Portuguese)</a></li>
+                                      <li><a href="#">Canada (English)</a></li>
+                                      <li><a href="#">China (中国)</a></li>
+                                      <li><a href="#">France (Français)</a></li>
+                                      <li><a href="#">Germany (Deutsch)</a></li>
+                                      <li><a href="#">Italy (Italiano)</a></li>
+                                      <li><a href="#">Japan (日本)</a></li>
+                                      <li><a href="#">Mexico (Español)</a></li>
+                                      <li><a href="#">Philippines (English)</a></li>
+                                      <li><a href="#">Russia (Россия)</a></li>
+                                      <li><a href="#">South Korea (대한민국)</a></li>
+                                      <li><a href="#">Spain (Español)</a></li>
+                                      <li><a href="#">Switzerland (Schweiz)</a></li>
+                                      <li><a href="#">Mauritius</a></li>
+                                    </ul>
+                  </div>
+
+                </div>
+          </li>
+          <li><a href="#" class="login-link">Login</a></li>
+          <li><a href="#" class="btn btn-border">Request Free Trial</a></li>
+        </ul>
+      </div>
+      <!-- nav margin and spacing -->
+    </div>
+    <!-- top nav end -->
+    <!-- Main Nav -->
+    <div class="main-nav">
+      <!-- nav margin and spacing -->
+      <div class="main-nav__wrapper">
+          <div class="brand">
+            <a href="#" class="logo"><img src="/src/images/cropped-Blue-Logo.png" alt="gofluent logo"></a>
+          </div>
+
+
+          <!-- Nav Links  -->
+                  <ul id="nav-container" class="main-nav__links">
+                    <li  class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">Languages</a>
+                        <i class="arrow fa fa-angle-down rotate-element"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <h1>Menu Area 1</h1>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">Solutions</a>
+                        <i class="arrow fa fa-angle-down"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <div class="row">
+                            <div class="drop-down__boxLeft">
+                              <p class="solutions-link__title">Learning Tools</p>
+
+                              <div class="solutions-link__row">
+                                <!-- Nav Link Item container -->
+                                <div >
+                                  <!-- Nav Link Item  -->
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/eLearning.png" alt="elearning icon" style="height:21px; width: auto; margin-right: 13px;">
+                                    <div>
+                                      <span class="link-pill__title">eLearning</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/eWriting.png" alt="elearning icon" style="height:19px; width: auto; margin-right: 13px;">
+                                    <div>
+                                      <span class="link-pill__title">eWriting</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/Live Lessons.png" alt="elearning icon" style="height:19px; width: auto; margin-right: 13px;">
+                                    <div>
+                                      <span class="link-pill__title">Live Lessons</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+
+                                  <!-- Nav Link Item  -->
+                                </div>
+                                <!-- Nav Link Item container -->
+                                <!-- Nav Link Item container -->
+                                <div style="margin-right: 0px;">
+                                  <!-- Nav Link Item  -->
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/VCR.png" alt="elearning icon" style="height:23px; width: auto; margin-right: 13px;">
+                                    <div>
+                                      <span class="link-pill__title">Virtual Classroom</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+                                  <!-- Nav Link Item  -->
+                                  <!-- Nav Link Item  -->
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/Mobile.png" alt="elearning icon" style="height:22px; width: auto; margin-right: 13px;">
+                                    <div>
+                                      <span class="link-pill__title">Mobile Learning</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+                                  <!-- Nav Link Item  -->
+                                  <!-- Nav Link Item  -->
+                                  <a class="link-pill" href="#">
+                                    <img src="/src/images/Face to Face.png" alt="elearning icon" style="height:19px; width: auto; margin-right: 10px;">
+                                    <div>
+                                      <span class="link-pill__title">Face-to-Face</span>
+                                      <span class="link-pill__body">Lorem Ipsum Dolor Sit Amet</span>
+                                    </div>
+                                  </a>
+                                  <!-- Nav Link Item  -->
+                                </div>
+                                <!-- Nav Link Item container -->
+                              </div>
+
+                            </div>
+                            <div class="drop-down__boxRight">
+                              <div style="margin-left: auto;">
+                                  <p class="solutions-link__title">Languages <span>></span></p>
+                                  
+                                  <div class="solitions-link__body" >
+                                    <a href="#" class="link-pill__language">English</a>
+                                    <a href="#" class="link-pill__language">Chinese</a>
+                                    <a href="#" class="link-pill__language">French</a>
+                                    <a href="#" class="link-pill__language">German</a>
+                                    <a href="#" class="link-pill__language">Italian</a>
+                                    <a href="#" class="link-pill__language">Portugese</a>
+                                    <a href="#" class="link-pill__language">Spanish</a>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li  class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">Services</a>
+                        <i class="arrow fa fa-angle-down move"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <h1>Menu Area 3</h1>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li  class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">Industries</a>
+                        <i class="arrow fa fa-angle-down"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <h1>Menu Area 4</h1>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li  class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">Resources</a>
+                        <i class="arrow fa fa-angle-down"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <h1>Menu Area 5</h1>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li  class="nav-item toggle">
+                      <div class="link">
+                        <a href="#">About Us</a>
+                        <i class="arrow fa fa-angle-down"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <h1>Menu Area 6</h1>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+                    <li class="nav-item toggle mb-only">
+                      <div class="link">
+                        <a href="#">Countries</a>
+                        <i class="arrow fa fa-angle-down"></i>
+                      </div>
+                      <!-- Accordion Start -->
+                      <div class="menu-area inner">
+                        <div class="menu-area__container">
+                          <ul class="country-row">
+                            <li><a href="#">Brazil (Portuguese)</a></li>
+                            <li><a href="#">Canada (English)</a></li>
+                            <li><a href="#">China (中国)</a></li>
+                            <li><a href="#">France (Français)</a></li>
+                            <li><a href="#">Germany (Deutsch)</a></li>
+                            <li><a href="#">Italy (Italiano)</a></li>
+                            <li><a href="#">Japan (日本)</a></li>
+                            <li><a href="#">Mexico (Español)</a></li>
+                            <li><a href="#">Philippines (English)</a></li>
+                            <li><a href="#">Russia (Россия)</a></li>
+                            <li><a href="#">South Korea (대한민국)</a></li>
+                            <li><a href="#">Spain (Español)</a></li>
+                            <li><a href="#">Switzerland (Schweiz)</a></li>
+                            <li><a href="#">Mauritius</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Accordion Start END -->
+                    </li>
+
+                      <div class="btn-group">
+                        <a href="#" class="btn-m">Contact Us</a>
+                        <a href="#" class="btn-m">Request Free Trial</a>
+                        <a href="#" class="btn-login">Login</a>
+                      </div>
+
+                  </ul>
+          <!-- Nav Links -->
+          <div>
+            
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn-contact">CONTACT US</button>
+            <div class="burger toggle">
+            <div id="wrapper">
+                <div id="mene" class="main-item menu">
+                  <div class="line line01"></div>
+                  <div class="line line02"></div>
+                  <div class="line line03"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- nav margin and spacing  end -->
+    </div>
+    <!-- Main Nav End -->
+  </nav>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis numquam voluptatibus distinctio ullam deleniti quisquam ex quidem doloribus amet molestias animi eaque maxime deserunt qui, architecto est explicabo optio.</p>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+        $("#wrapper").click(function () {
+            $(".menu").toggleClass("close");
+            $('#nav-container').slideToggle();
+            $('.btn-contact').toggleClass("remove");
+
+        });
+
+        $('.link').click(function (e) {
+          e.preventDefault();
+
+          var $this = $(this);
+
+          if ($this.next().hasClass('show')) {
+            $this.next().removeClass('show');
+            $this.next().slideUp(100);
+          } else {
+            $this.parent().parent().find('li .inner').removeClass('show');
+            $this.parent().parent().find('li .inner').slideUp(350);
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(100);
+          }
+          
+
+        });
+
+        $(function () {
+            $('.link').on('click', function () {
+              $('.link').not(this).find('.fa-angle-down').removeClass('rotate');
+              $(this).find('.fa-angle-down').toggleClass('rotate');
+            })
+        })
+
+
+        //on scroll hover
+
+
+        $(function() {
+          $('#nav').css({ 'background:':'blue','box-shadow': '0 0 0', 'border-bottom': '0px solid #B2C1C8' });
+          $('.top-nav').css({ 'background': 'transparent' });
+          $('.main-nav').css({'background': 'transparent'});
+          
+          $('.logo img').attr('src', 'https://www.go-iti.com/us-en/wp-content/uploads/sites/451/2019/05/gf-whitelogo.png');
+
+          $('.link a').css({ 'color': 'white'});
+
+          $('.btn-contact').css({'background':'white','color': '#0a4259'})
+        });
+
+        $('#nav').hover(function () {
+           $('.top-nav').removeAttr("style");
+           $('#nav').removeAttr("style");
+           $('.main-nav').removeAttr("style");
+        })
+        $('#nav').mouseleave(function() {
+          $('#nav').css({ 'background:': 'blue', 'box-shadow': '0 0 0', 'border-bottom': '0px solid #B2C1C8' });
+          $('.top-nav').css({ 'background': 'transparent' });
+          $('.main-nav').css({ 'background': 'transparent' });
+
+          $('.logo img').attr('src', 'https://www.go-iti.com/us-en/wp-content/uploads/sites/451/2019/05/gf-whitelogo.png');
+
+          $('.link a').css({ 'color': 'white' });
+
+          $('.btn-contact').css({ 'background': 'white', 'color': '#0a4259' })
+        })
+
+  </script>
 </body>
 </html>
+

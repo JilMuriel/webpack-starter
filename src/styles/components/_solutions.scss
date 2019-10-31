@@ -1,0 +1,83 @@
+.row {
+    display: flex;
+
+
+
+    @include for-size(phone-only) {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    @include for-size(laptop-up) {
+        padding: 40px 43px 60px;
+    }
+
+    @include for-size(desktop-up) {
+        flex-direction: row;
+        padding: 40px 43px 60px;
+    }
+}
+
+.row>ul {
+    width: 100%;
+}
+
+.row ul>li {
+    width: 100%
+}
+
+.solitions-link__body {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include for-size(phone-only) {
+        flex-direction: column;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        flex-direction: column;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        flex-direction: column;
+    }
+
+    @include for-size(laptop-up) {
+        flex-direction: row;
+    }
+
+    @include for-size(desktop-up) {
+        flex-direction: row;
+    }
+}
+
+
+
+.drop-down__boxLeft {
+    @include for-size(phone-only) {
+        margin-bottom: 30px;
+    }
+
+    @include for-size(laptop-up) {
+        width: 55%;
+    }
+
+    @include for-size(desktop-up) {
+        width: 55%;
+    }
+}
+
+.drop-down__boxRight {
+    @include for-size(laptop-up) {
+        width: 45%;
+    }
+
+    @include for-size(desktop-up) {
+        width: 45%;
+    }
+}

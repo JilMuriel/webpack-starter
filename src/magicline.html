@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+body { 
+    font: 14px Georgia, serif; 
+    background: #2F2626; 
+    color: #eee; 
+}
+
+header { 
+    padding: 100px 0 0 0; 
+    display: block; 
+}
+header h1 { 
+    width: 960px; 
+    margin: 0 auto; 
+}
+a { 
+    color: #eee; 
+}
+a:hover { 
+    color: white; 
+}
+
+.nav-wrap { 
+	margin: 50px auto; 
+	background-color: rgba(0, 0, 0, 0.6); 
+	border-top:    2px solid white; 
+	border-bottom: 2px solid white; 
+}
+
+/* Clearfix */
+.group:after { 
+    visibility: hidden; 
+    display: block; 
+    content: ""; 
+    clear: both; 
+    height: 0; 
+}
+*:first-child+html .group { 
+    zoom: 1; 
+} /* IE7 */
+
+
+
+/* Example One */
+#example-one { 
+	margin: 0 auto; 
+	list-style: none; 
+	position: relative; 
+	width: 960px; 
+}
+#example-one li { 
+	display: inline-block;	
+}
+#example-one a { 
+	color: #bbb; 
+	font-size: 14px; 
+	float: left;
+	padding: 6px 10px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#example-one a:hover { 
+	color: white; 
+}
+#magic-line { 
+	position: absolute;
+	bottom: -2px; 
+	left: 0; 
+	width: 100px; 
+	height: 2px; 
+	background: blue;
+}
+.current_page_item a { 
+	color: white !important; 
+}
+.ie6 #example-one li, .ie7 #example-one li { 
+	display: inline; 
+}
+.ie6 #magic-line {
+	bottom: -3px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav-wrap">
+        <ul class="group" id="example-one">
+            <li class="current_page_item"><a href="#">Home</a></li>
+            <li><a href="#">Buy Tickets</a></li>
+            <li><a href="#">Group Sales</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">The Show</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Magic Shop</a></li>
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+    <script>
+    var $el, leftPos, newWidth;
+    $mainNav2 = $("#example-two");
+
+    /*
+            EXAMPLE ONE
+        */
+
+    /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
+    $("#example-one").append("<li id='magic-line'></li>");
+
+    /* Cache it */
+    var $magicLine = $("#magic-line");
+
+    $magicLine
+        .width($(".current_page_item").width())
+        .css("left", $(".current_page_item a").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+
+    $("#example-one li")
+        .find("a")
+        .hover(
+            function () {
+                $el = $(this);
+                leftPos = $el.position().left;
+                newWidth = $el.parent().width();
+
+                $magicLine.stop().animate({
+                    left: leftPos,
+                    width: newWidth
+                });
+            },
+            function () {
+                $magicLine.stop().animate({
+                    left: $magicLine.data("origLeft"),
+                    width: $magicLine.data("origWidth")
+                });
+            }
+        );
+
+    /*
+            EXAMPLE TWO
+        */
+
+    /* Kick IE into gear */
+    $(".current_page_item_two a").mouseenter();
+    </script>
+</body>
+</html>

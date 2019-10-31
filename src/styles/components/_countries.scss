@@ -1,0 +1,29 @@
+.mb-only {
+    display: none;
+
+    @include for-size(phone-only) {
+        display: block;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        display: block;
+    }
+}
+
+.country-row {
+    padding: 40px 43px;
+
+    li {
+        margin-bottom: 15px;
+
+        a {
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-blue;
+            }
+        }
+    }
+}
